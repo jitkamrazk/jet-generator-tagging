@@ -1,0 +1,11 @@
+Main:numberOfEvents = 25000         ! number of events to generate
+Beams:idA = 2212                    ! proton
+Beams:idB = 2212                    ! proton
+Beams:eCM = 200.                    ! RHIC nominal (GeV)
+Bottomonium:all = on                ! bottomonium production
+HardQCD:gg2bbbar = on               ! g g -> b bbar
+HardQCD:qqbar2bbbar = on            ! q qbar -> b bbar
+ParticleDecays:limitCylinder = on
+ParticleDecays:xyMax = 2000
+ParticleDecays:zMax = 600
+Random:setSeed = on

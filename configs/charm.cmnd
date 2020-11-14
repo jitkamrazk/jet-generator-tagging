@@ -1,0 +1,11 @@
+Main:numberOfEvents = 25000         ! number of events to generate
+Beams:idA = 2212                    ! proton
+Beams:idB = 2212                    ! proton
+Beams:eCM = 200.                    ! RHIC nominal (GeV)
+Charmonium:all = on                 ! charmonium production
+HardQCD:gg2ccbar = on               ! g g -> c cbar
+HardQCD:qqbar2ccbar = on            ! q qbar -> c cbar
+ParticleDecays:limitCylinder = on
+ParticleDecays:xyMax = 2000
+ParticleDecays:zMax = 600
+Random:setSeed = on

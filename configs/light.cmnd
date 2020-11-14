@@ -1,0 +1,14 @@
+Main:numberOfEvents = 50000       ! number of events to generate
+Beams:idA = 2212                  ! proton
+Beams:idB = 2212                  ! proton
+Beams:eCM = 200.                  ! RHIC nominal (GeV)
+HardQCD:gg2gg = on
+HardQCD:gg2qqbar = on
+HardQCD:qg2qg = on
+HardQCD:qq2qq = on
+HardQCD:qqbar2gg = on
+HardQCD:qqbar2qqbarNew = on
+ParticleDecays:limitCylinder = on
+ParticleDecays:xyMax = 2000
+ParticleDecays:zMax = 600
+Random:setSeed = on
