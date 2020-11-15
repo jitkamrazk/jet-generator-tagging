@@ -175,9 +175,10 @@ bool HFJetGenerator::generateEvent() {
 
 void HFJetGenerator::processEvent(Pythia8::Pythia *pythia, std::vector<fastjet::PseudoJet> &event, bool is_pileup) {
     // Random generators needed for the efficiency and pileup simulations
-    std::default_random_engine generator;
+    std::random_device rd;
+    std::mt19937 generator(rd());
     std::uniform_real_distribution<float> track_eff(0.0, 1.0);
-    std::uniform_real_distribution<float> pileup_vtx(-60, 60);
+    std::uniform_real_distribution<float> pileup_vtx(-60.0, 60.0);
 
     float pileup_event_vtx = pileup_vtx(generator);
 
